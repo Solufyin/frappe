@@ -81,6 +81,23 @@
 
                 .panel-heading
                 {
+                    // height: 50px;
+
+                    .panel-title
+                    {
+                        .media-heading
+                        {
+                            font-size: 12px;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+
+                        .media-subtitle
+                        {
+                            font-size: 12px;
+                        }
+                    }
+
                     .frappe-chat-action-bar
                     {
                         form
@@ -115,6 +132,12 @@
                         }
                     }
                 }
+            }
+
+            & > .panel.panel-bg
+            {
+                background-size: 350px 500px;
+                background-image: url(/assets/frappe/images/chat/wallpaper-default.jpg);
             }
 
             & > .panel.panel-span
@@ -237,6 +260,8 @@
 {
     position: absolute;
       bottom: 0;
+        left: 0;
+       right: 0;
 
     .chat-form
     {
@@ -259,6 +284,7 @@
                    resize: none;
              padding-left: 0px;
             padding-right: 0px;
+                 overflow: hidden;
         }
         
         .fa
@@ -274,7 +300,7 @@
 {
     padding-bottom: 50px;
         height: 100%; 
-    background: @frappe-chat-list-bg-color;
+    // background: @frappe-chat-list-bg-color;
     background-size: 350px 500px;
     background-image: url(/assets/frappe/images/chat/wallpaper-default.jpg);
     overflow-y: scroll;
@@ -284,6 +310,11 @@
         .avatar
         {
             vertical-align: top;
+
+            .standard-image
+            {
+                background-color: white;
+            }
         }
 
         .cursor-pointer;
